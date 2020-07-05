@@ -11,6 +11,7 @@ import StoreKit
 
 open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
 
+    @IBOutlet weak var bgIcon: UIImageView!
     var alert: PMAlertController?
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
         table.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
+        
+        bgIcon.image = UIImage(named: "bg_iap", in: Bundle(for: IAPCtr.self), compatibleWith: nil)
         
         IAPProducts.store.requestProducts { (success, products) in
             if success, let arr = products {

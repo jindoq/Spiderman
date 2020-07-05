@@ -10,7 +10,7 @@ import Foundation
 import AVKit
 import AVFoundation
 
-public struct SoundManager {
+public class SoundManager {
     public static var player: AVAudioPlayer?
     
     public static func playSucess() {
@@ -31,7 +31,7 @@ public struct SoundManager {
     }
     
     public static func playSound(_ fileName: String) {
-        let path = Bundle.main.path(forResource: "\(fileName)", ofType: "mp3")
+        let path = Bundle(for: SoundManager.self).path(forResource: "\(fileName)", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         
         do {

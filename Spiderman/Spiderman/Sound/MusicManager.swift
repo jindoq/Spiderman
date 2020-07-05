@@ -11,11 +11,10 @@ import AVKit
 import AVFoundation
 
 public class MusicManager: NSObject {
-    public static let shared = MusicManager()
-    var player: AVAudioPlayer?
+    public static var player: AVAudioPlayer?
     
-    public func playSound() {
-        let path = Bundle.main.path(forResource: "background_home", ofType: "mp3")
+    public static func playSound() {
+        let path = Bundle(for: SoundManager.self).path(forResource: "background_home", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         
         do {
@@ -27,7 +26,7 @@ public class MusicManager: NSObject {
         }
     }
     
-    public func stopSound() {
+    public static func stopSound() {
         player?.stop()
     }
 }

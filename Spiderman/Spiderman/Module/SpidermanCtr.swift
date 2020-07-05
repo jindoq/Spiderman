@@ -26,7 +26,7 @@ open class SpidermanCtr: UIViewController {
     
     open func setupMusic() {
         if !offSound {
-            MusicManager.shared.playSound()
+            MusicManager.playSound()
         }
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: offSound ? UIImage(named: "ic_music_off", in: Bundle(for: SpidermanCtr.self), compatibleWith: nil) : UIImage(named: "ic_music_on", in: Bundle(for: SpidermanCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(musicAction))
     }
@@ -35,9 +35,9 @@ open class SpidermanCtr: UIViewController {
         let tmp = offSound
         offSound = !tmp
         if offSound {
-            MusicManager.shared.stopSound()
+            MusicManager.stopSound()
         } else {
-            MusicManager.shared.playSound()
+            MusicManager.playSound()
         }
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: offSound ? UIImage(named: "ic_music_off", in: Bundle(for: SpidermanCtr.self), compatibleWith: nil) : UIImage(named: "ic_music_on", in: Bundle(for: SpidermanCtr.self), compatibleWith: nil), style: .done, target: self, action: #selector(musicAction))
