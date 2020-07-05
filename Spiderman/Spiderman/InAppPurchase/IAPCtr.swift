@@ -10,14 +10,21 @@ import UIKit
 import StoreKit
 
 open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
-
-    @IBOutlet weak var bgIcon: UIImageView!
+    lazy var bgIcon: UIImageView = {
+        let icon = UIImageView()
+        icon.contentMode = .scaleToFill
+        return icon
+    }()
+    
     var alert: PMAlertController?
     open override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Restore", style: .done, target: self, action: #selector(restoreAction))
-        view.addSubviews(table)
+        view.addSubviews(bgIcon, table)
         table.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
+        bgIcon.snp.makeConstraints { (maker) in
             maker.edges.equalToSuperview()
         }
         
