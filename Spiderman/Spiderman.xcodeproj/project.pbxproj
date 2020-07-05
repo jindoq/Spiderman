@@ -66,6 +66,20 @@
 		0419221F24B1874D006CAB8E /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0419221C24B1874D006CAB8E /* PMAlertController.xib */; };
 		0419222024B1874D006CAB8E /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419221D24B1874D006CAB8E /* PMAlertController.swift */; };
 		0419222224B18754006CAB8E /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222124B18754006CAB8E /* ZFRippleButton.swift */; };
+		0419222824B1CD5E006CAB8E /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222424B1CD5E006CAB8E /* ImageGenerator.swift */; };
+		0419222924B1CD5E006CAB8E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222524B1CD5E006CAB8E /* Extensions.swift */; };
+		0419222A24B1CD5E006CAB8E /* Cheers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222624B1CD5E006CAB8E /* Cheers.swift */; };
+		0419222B24B1CD5E006CAB8E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222724B1CD5E006CAB8E /* Config.swift */; };
+		0419222F24B1CE18006CAB8E /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222D24B1CE18006CAB8E /* MusicManager.swift */; };
+		0419223024B1CE18006CAB8E /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419222E24B1CE18006CAB8E /* SoundManager.swift */; };
+		0419223A24B1CE46006CAB8E /* brilliant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223224B1CE45006CAB8E /* brilliant.mp3 */; };
+		0419223B24B1CE46006CAB8E /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223324B1CE46006CAB8E /* correct.mp3 */; };
+		0419223C24B1CE46006CAB8E /* greatjob.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223424B1CE46006CAB8E /* greatjob.mp3 */; };
+		0419223D24B1CE46006CAB8E /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223524B1CE46006CAB8E /* tap.mp3 */; };
+		0419223E24B1CE46006CAB8E /* background_home.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223624B1CE46006CAB8E /* background_home.mp3 */; };
+		0419223F24B1CE46006CAB8E /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223724B1CE46006CAB8E /* incorrect.mp3 */; };
+		0419224024B1CE46006CAB8E /* amazing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223824B1CE46006CAB8E /* amazing.mp3 */; };
+		0419224124B1CE46006CAB8E /* excellent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0419223924B1CE46006CAB8E /* excellent.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +144,20 @@
 		0419221C24B1874D006CAB8E /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
 		0419221D24B1874D006CAB8E /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		0419222124B18754006CAB8E /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
+		0419222424B1CD5E006CAB8E /* ImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
+		0419222524B1CD5E006CAB8E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0419222624B1CD5E006CAB8E /* Cheers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cheers.swift; sourceTree = "<group>"; };
+		0419222724B1CD5E006CAB8E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0419222D24B1CE18006CAB8E /* MusicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		0419222E24B1CE18006CAB8E /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		0419223224B1CE45006CAB8E /* brilliant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brilliant.mp3; sourceTree = "<group>"; };
+		0419223324B1CE46006CAB8E /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		0419223424B1CE46006CAB8E /* greatjob.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = greatjob.mp3; sourceTree = "<group>"; };
+		0419223524B1CE46006CAB8E /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tap.mp3; sourceTree = "<group>"; };
+		0419223624B1CE46006CAB8E /* background_home.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background_home.mp3; sourceTree = "<group>"; };
+		0419223724B1CE46006CAB8E /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
+		0419223824B1CE46006CAB8E /* amazing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amazing.mp3; sourceTree = "<group>"; };
+		0419223924B1CE46006CAB8E /* excellent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = excellent.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +190,8 @@
 		041921A224B18257006CAB8E /* Spiderman */ = {
 			isa = PBXGroup;
 			children = (
+				0419222C24B1CE10006CAB8E /* Sound */,
+				0419222324B1CD52006CAB8E /* Cheers */,
 				0419221A24B1871E006CAB8E /* PMAlert */,
 				0419221124B186AA006CAB8E /* InAppPurchase */,
 				0419220C24B186A7006CAB8E /* UIColor-Extension.swift */,
@@ -258,6 +288,42 @@
 			path = PMAlert;
 			sourceTree = "<group>";
 		};
+		0419222324B1CD52006CAB8E /* Cheers */ = {
+			isa = PBXGroup;
+			children = (
+				0419222624B1CD5E006CAB8E /* Cheers.swift */,
+				0419222724B1CD5E006CAB8E /* Config.swift */,
+				0419222524B1CD5E006CAB8E /* Extensions.swift */,
+				0419222424B1CD5E006CAB8E /* ImageGenerator.swift */,
+			);
+			path = Cheers;
+			sourceTree = "<group>";
+		};
+		0419222C24B1CE10006CAB8E /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0419223124B1CE39006CAB8E /* mp3 */,
+				0419222D24B1CE18006CAB8E /* MusicManager.swift */,
+				0419222E24B1CE18006CAB8E /* SoundManager.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		0419223124B1CE39006CAB8E /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				0419223824B1CE46006CAB8E /* amazing.mp3 */,
+				0419223624B1CE46006CAB8E /* background_home.mp3 */,
+				0419223224B1CE45006CAB8E /* brilliant.mp3 */,
+				0419223324B1CE46006CAB8E /* correct.mp3 */,
+				0419223924B1CE46006CAB8E /* excellent.mp3 */,
+				0419223424B1CE46006CAB8E /* greatjob.mp3 */,
+				0419223724B1CE46006CAB8E /* incorrect.mp3 */,
+				0419223524B1CE46006CAB8E /* tap.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -329,8 +395,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0419223B24B1CE46006CAB8E /* correct.mp3 in Resources */,
+				0419223E24B1CE46006CAB8E /* background_home.mp3 in Resources */,
+				0419224024B1CE46006CAB8E /* amazing.mp3 in Resources */,
+				0419223A24B1CE46006CAB8E /* brilliant.mp3 in Resources */,
+				0419223C24B1CE46006CAB8E /* greatjob.mp3 in Resources */,
+				0419224124B1CE46006CAB8E /* excellent.mp3 in Resources */,
+				0419223D24B1CE46006CAB8E /* tap.mp3 in Resources */,
 				0419221F24B1874D006CAB8E /* PMAlertController.xib in Resources */,
 				0419221924B18702006CAB8E /* Assets.xcassets in Resources */,
+				0419223F24B1CE46006CAB8E /* incorrect.mp3 in Resources */,
 				0419221624B186D0006CAB8E /* IAPCtr.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,11 +442,16 @@
 				041921EB24B185A0006CAB8E /* LayoutConstraintItem.swift in Sources */,
 				041921D224B185A0006CAB8E /* LayoutConstraint.swift in Sources */,
 				041921D824B185A0006CAB8E /* ConstraintMakerExtendable.swift in Sources */,
+				0419222F24B1CE18006CAB8E /* MusicManager.swift in Sources */,
+				0419222824B1CD5E006CAB8E /* ImageGenerator.swift in Sources */,
+				0419222924B1CD5E006CAB8E /* Extensions.swift in Sources */,
+				0419223024B1CE18006CAB8E /* SoundManager.swift in Sources */,
 				0419220324B185D3006CAB8E /* SpidermanCtr.swift in Sources */,
 				0419220224B185D3006CAB8E /* SpidermanStaticListView.swift in Sources */,
 				041921E524B185A0006CAB8E /* ConstraintView+Extensions.swift in Sources */,
 				0419220124B185D3006CAB8E /* SpidermanListCell.swift in Sources */,
 				0419220F24B186A7006CAB8E /* UIColor-Extension.swift in Sources */,
+				0419222A24B1CD5E006CAB8E /* Cheers.swift in Sources */,
 				041921ED24B185A0006CAB8E /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				0419220824B185D3006CAB8E /* SpidermanListView.swift in Sources */,
 				0419220624B185D3006CAB8E /* SpidermanView.swift in Sources */,
@@ -390,6 +469,7 @@
 				041921D324B185A0006CAB8E /* ConstraintPriority.swift in Sources */,
 				041921D724B185A0006CAB8E /* ConstraintInsetTarget.swift in Sources */,
 				0419221E24B1874D006CAB8E /* PMAlertAction.swift in Sources */,
+				0419222B24B1CD5E006CAB8E /* Config.swift in Sources */,
 				041921EA24B185A0006CAB8E /* ConstraintMultiplierTarget.swift in Sources */,
 				041921E224B185A0006CAB8E /* ConstraintDirectionalInsetTarget.swift in Sources */,
 				041921F524B185A0006CAB8E /* Typealiases.swift in Sources */,

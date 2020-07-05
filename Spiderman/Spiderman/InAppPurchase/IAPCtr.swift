@@ -9,10 +9,10 @@
 import UIKit
 import StoreKit
 
-class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
+open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
 
     var alert: PMAlertController?
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Restore", style: .done, target: self, action: #selector(restoreAction))
         view.addSubviews(table)
@@ -27,12 +27,12 @@ class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
         }
     }
     
-    @objc func restoreAction() {
+    @objc open func restoreAction() {
         IAPProducts.store.restorePurchases()
     }
     
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    open override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         alert = PMAlertController(title: "Please Enter your Year of Birth to continue", description: "This information is not stored and is only for age verification", image: nil, style: .alert)
         alert?.addTextField { (tf) in
             tf?.keyboardType = .numberPad
@@ -45,7 +45,7 @@ class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
         present(alert!, animated: true, completion: nil)
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text = ((textField.text ?? "") as NSString).replacingCharacters(in: range, with: string)
         if text.count >= 4 {
             let year = Calendar.current.component(.year, from: Date())
@@ -61,25 +61,25 @@ class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
     }
 }
 
-class IAPCell: SpidermanListCell<SKProduct> {
-    lazy var titleLbl: UILabel = {
+open class IAPCell: SpidermanListCell<SKProduct> {
+    open lazy var titleLbl: UILabel = {
         let lbl = UIMaker.makeTitleLbl()
         return lbl
     }()
     
-    lazy var contentLbl: UILabel = {
+    open lazy var contentLbl: UILabel = {
         let lbl = UIMaker.makeContentLbl()
         return lbl
     }()
     
-    lazy var icon: UIImageView = {
+    open lazy var icon: UIImageView = {
         let ic = UIImageView()
         ic.contentMode = .scaleAspectFit
         ic.image = UIImage(named: "ic_buy", in: Bundle(for: IAPCtr.self), compatibleWith: nil)
         return ic
     }()
     
-    override func setupView() {
+    open override func setupView() {
         super.setupView()
         let view = UIView()
         view.backgroundColor = .white
@@ -107,7 +107,7 @@ class IAPCell: SpidermanListCell<SKProduct> {
         }
     }
     
-    override func configCell(_ data: SKProduct) {
+    open override func configCell(_ data: SKProduct) {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.usesGroupingSeparator = true
         currencyFormatter.numberStyle = .currency

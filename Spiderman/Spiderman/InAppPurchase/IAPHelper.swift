@@ -30,9 +30,9 @@ import StoreKit
 
 public struct IAPProducts {
   
-  public static let removeAds = ""
+  public static let accessFullContents = ""
   
-  private static let productIdentifiers: Set<ProductIdentifier> = [IAPProducts.removeAds]
+  private static let productIdentifiers: Set<ProductIdentifier> = [IAPProducts.accessFullContents]
 
   public static let store = IAPHelper(productIds: IAPProducts.productIdentifiers)
 }
