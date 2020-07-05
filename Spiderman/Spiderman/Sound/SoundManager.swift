@@ -10,28 +10,27 @@ import Foundation
 import AVKit
 import AVFoundation
 
-public class SoundManager: NSObject {
-    static let shared = SoundManager()
-    var player: AVAudioPlayer?
+public struct SoundManager {
+    public static var player: AVAudioPlayer?
     
-    public func playSucess() {
+    public static func playSucess() {
         let fileName = ["amazing", "brilliant", "excellent", "greatjob"][Int.random(in: 0...3)]
         playSound(fileName)
     }
     
-    public func playIncorrect() {
+    public static func playIncorrect() {
         playSound("incorrect")
     }
     
-    public func playCorrect() {
+    public static func playCorrect() {
         playSound("correct")
     }
     
-    public func playTap() {
+    public static func playTap() {
         playSound("tap")
     }
     
-    private func playSound(_ fileName: String) {
+    public static func playSound(_ fileName: String) {
         let path = Bundle.main.path(forResource: "\(fileName)", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         

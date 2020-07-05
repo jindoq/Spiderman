@@ -11,7 +11,7 @@ import AVKit
 import AVFoundation
 
 public class MusicManager: NSObject {
-    static let shared = MusicManager()
+    public static let shared = MusicManager()
     var player: AVAudioPlayer?
     
     public func playSound() {

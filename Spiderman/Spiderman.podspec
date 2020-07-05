@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Spiderman"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Spiderman is member of Avengers"
 
   # This description is used to generate tags and improve search results.
@@ -104,10 +104,10 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resources = "Spiderman/**/*.{xib,xcassets}"
+  spec.resources = "Spiderman/**/*.{xib,xcassets,mp3}"
   spec.resource_bundles = {
     'Spiderman' => [
-        'Spiderman/**/*.xib'
+        'Spiderman/**/*.xib', 'Spiderman/**/*.mp3'
     ]
   }
 
