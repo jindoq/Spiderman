@@ -51,7 +51,7 @@ open class SpidermanGridView<C: SpidermanGridCell<U>, U>: SpidermanView, UIColle
         return collection
     }()
     
-    open var columnNumber: Int {
+    open var columnNumber: Double {
         return 4
     }
     

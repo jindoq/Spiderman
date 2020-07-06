@@ -50,6 +50,7 @@ open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
             tf?.delegate = self
             tf?.placeholder = "e.g. 1993"
             tf?.tag = indexPath.row
+            tf?.textColor = UIColor.black
         }
         alert?.addAction(PMAlertAction(title: "Dismiss", style: .default))
         present(alert!, animated: true, completion: nil)

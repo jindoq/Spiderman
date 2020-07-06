@@ -32,7 +32,7 @@ open class SpidermanGridCtr<C: SpidermanGridCell<U>, U>: SpidermanCtr, UICollect
         return collection
     }()
     
-    open var columnNumber: Int {
+    open var columnNumber: Double {
         return 4
     }
     
