@@ -14,6 +14,7 @@ open class SpidermanCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         backgroundColor = .clear
+        contentView.isUserInteractionEnabled = true
         setupView()
     }
     

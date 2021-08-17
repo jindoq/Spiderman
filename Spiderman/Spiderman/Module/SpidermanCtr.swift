@@ -50,22 +50,10 @@ open class SpidermanCtr: UIViewController {
 
     @objc open func shoppingAction() {
         let vc = IAPCtr()
-        push(vc)
-    }
-}
-
-extension SpidermanCtr {
-    open func present(_ vc: UIViewController) {
-        vc.modalPresentationStyle = .fullScreen
-        DispatchQueue.main.async {
-            self.present(vc, animated: true, completion: nil)
-        }
-    }
-    
-    open func push(_ vc: UIViewController) {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
+

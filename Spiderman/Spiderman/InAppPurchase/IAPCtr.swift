@@ -16,7 +16,6 @@ open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
         return icon
     }()
     
-    var alert: PMAlertController?
     open override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Restore", style: .done, target: self, action: #selector(restoreAction))
@@ -43,32 +42,7 @@ open class IAPCtr: SpidermanListView<IAPCell, SKProduct>, UITextFieldDelegate {
     
     
     open override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        alert = PMAlertController(title: "Please Enter your Year of Birth to continue", description: "This information is not stored and is only for age verification", image: nil, style: .alert)
-        alert?.addTextField { (tf) in
-            tf?.keyboardType = .numberPad
-            tf?.becomeFirstResponder()
-            tf?.delegate = self
-            tf?.placeholder = "e.g. 1993"
-            tf?.tag = indexPath.row
-            tf?.textColor = UIColor.black
-        }
-        alert?.addAction(PMAlertAction(title: "Dismiss", style: .default))
-        present(alert!, animated: true, completion: nil)
-    }
-    
-    open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let text = ((textField.text ?? "") as NSString).replacingCharacters(in: range, with: string)
-        if text.count >= 4 {
-            let year = Calendar.current.component(.year, from: Date())
-            if year - (Int(text) ?? 0) >= 18 {
-                IAPProducts.store.buyProduct(datasource[textField.tag])
-                alert?.dismiss(animated: true, completion: nil)
-            } else {
-                alert?.textFields[0].text = ""
-                return false
-            }
-        }
-        return true
+        IAPProducts.store.buyProduct(datasource[indexPath.row])
     }
 }
 

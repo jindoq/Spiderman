@@ -12,6 +12,7 @@ import UIKit
 open class SpidermanCollectionCell: UICollectionViewCell {
     override public init(frame: CGRect) {
         super.init(frame: frame)
+        contentView.isUserInteractionEnabled = true
         setupView()
     }
     
